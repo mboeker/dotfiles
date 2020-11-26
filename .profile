@@ -20,8 +20,10 @@ psg () { ps -eaf | grep -v grep | grep $@; }
 tn () { echo | telnet $@; }
 ggrep () { grep $@ | grep -v '.git'; }
 
-export HOMEBREW_GITHUB_API_TOKEN="483b3b476722f4aa6b56b9696ed83180fb4679aa"
-
 source /usr/local/bin/virtualenvwrapper.sh
 
+export HOMEBREW_GITHUB_API_TOKEN="483b3b476722f4aa6b56b9696ed83180fb4679aa"
 export PATH="$HOME/bin:$PATH"
+
+alias duh='du -h -d 1'
+alias vi=vim
