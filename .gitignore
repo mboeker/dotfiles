@@ -9,3 +9,5 @@ log/
 
 # sessions
 .bash_sessions/*
+.ansible/tmp/*
+filezilla/lockfile
