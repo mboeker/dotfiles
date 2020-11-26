@@ -1,2 +1,0 @@
-
-{"msg": "Timeout when waiting for 10.130.3.35:22", "failed": true, "elapsed": 300, "invocation": {"module_args": {"host": "10.130.3.35", "connect_timeout": 5, "delay": 0, "state": "started", "timeout": 300, "exclude_hosts": null, "search_regex": null, "path": null, "port": 22}}}

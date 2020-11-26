@@ -1,2 +1,0 @@
-
-{"changed": false, "elapsed": 33, "search_regex": null, "state": "started", "invocation": {"module_args": {"host": "10.130.1.161", "connect_timeout": 5, "delay": 0, "state": "started", "timeout": 300, "exclude_hosts": null, "search_regex": null, "path": null, "port": 22}}, "path": null, "port": 22}
