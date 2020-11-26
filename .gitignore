@@ -3,9 +3,10 @@ custom/
 !custom/plugins/example
 !custom/example.zsh
 
-# temp files directories
+# temp
 cache/
 log/
+*.swp
 
 # sessions
 .bash_sessions/*
