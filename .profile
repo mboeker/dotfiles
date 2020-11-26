@@ -23,7 +23,8 @@ ggrep () { grep $@ | grep -v '.git'; }
 source /usr/local/bin/virtualenvwrapper.sh
 
 export HOMEBREW_GITHUB_API_TOKEN="483b3b476722f4aa6b56b9696ed83180fb4679aa"
-export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/bin:$HOME/dotfiles:$PATH"
 
 alias duh='du -h -d 1'
 alias vi=vim
+
