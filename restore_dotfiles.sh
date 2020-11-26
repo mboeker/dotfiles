@@ -7,5 +7,6 @@ cd
 
 # transfer dotfiles
 rsync -a --exclude .git  ~/dotfiles/ ~/
+rsync -a restore_dotfiles.sh ~/bin/
 #rsync -a  ~/dotfiles/.* ~
 #rm -rf dotfiles
