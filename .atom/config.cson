@@ -1,0 +1,13 @@
+"*":
+  core:
+    automaticallyUpdate: false
+    telemetryConsent: "limited"
+  "exception-reporting":
+    userId: "8d3d22bc-c993-43cc-b84c-f29dafe27529"
+  "spell-check":
+    locales: [
+      "en-US"
+      "de-DE"
+    ]
+  welcome:
+    showOnStartup: false

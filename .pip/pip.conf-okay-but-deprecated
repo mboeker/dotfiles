@@ -1,0 +1,4 @@
+[global]
+#index-url = https://artifactory-pro.px.ftw/artifactory/api/pypi/pypi/simple
+#trusted-host = pypi.python.org artifactory-pro.px.ftw
+cert = /Users/mboeker/caci/crs-cert-ad.crt

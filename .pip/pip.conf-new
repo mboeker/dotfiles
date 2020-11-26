@@ -1,0 +1,4 @@
+[global]
+index-url = http://artifactory-pro.px.ftw/artifactory/api/pypi/pypi/simple
+extra-index-url = http://pypi-internal.px.ftw/simple
+trusted-host = pypi-internal.px.ftw pypi.python.org artifactory-pro.px.ftw

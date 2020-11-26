@@ -1,0 +1,33 @@
+alias ssh-ubu="ssh -l ubuntu -i ~/.ssh/planx"
+alias ssh-ubr="ssh -l uberboss -i ~/.ssh/id_rsa"
+
+alias ip='ifconfig | grep "inet "'
+alias res='scutil --dns | head -n 10; tail /etc/resolv.conf'
+alias flushdns='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; say flushed'
+
+alias ns='nslookup'
+alias sshr='ssh-keygen -f $HOME/.ssh/known_hosts -R'
+
+alias ap-ubu="ansible-playbook -u ubuntu --private-key ~/.ssh/planx -i hosts/config.ini -b"
+alias ap-ubr="ansible-playbook -u uberboss --private-key ~/.ssh/id_rsa -i hosts/config.ini -b -K"
+
+alias duh='du -h -d 1 | sort -h'
+alias gh=' history | grep'
+alias wgets='wget --no-check-certificate'
+alias clip='pbcopy'
+
+psg () { ps -eaf | grep -v grep | grep $@; }
+tn () { echo | telnet $@; }
+ggrep () { grep $@ | grep -v '.git'; }
+
+export HOMEBREW_GITHUB_API_TOKEN="483b3b476722f4aa6b56b9696ed83180fb4679aa"
+
+#alias python='/usr/local/opt/python/libexec/bin/python'
+#alias pip='/usr/local/opt/python/libexec/bin/pip'
+#export WORKON_HOME="~/.virtualenvs"
+#source /usr/local/bin/virtualenvwrapper.sh
+#alias python2='/usr/local/bin/python2'
+#export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+export PATH="/usr/local/opt/libarchive/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/libarchive/lib"
+export CPPFLAGS="-I/usr/local/opt/libarchive/include"

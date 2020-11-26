@@ -86,3 +86,4 @@ source $ZSH/oh-my-zsh.sh
 unsetopt inc_append_history
 unsetopt share_history
 source ~/.profile
+export PATH="/usr/local/sbin:$PATH"

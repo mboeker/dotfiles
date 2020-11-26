@@ -1,0 +1,30 @@
+------------------------------------------------------------
+/Users/mboeker/.virtualenvs/os-dev/bin/pip run on Tue Jan 10 19:13:37 2017
+Downloading/unpacking pxrancher
+  Getting page https://ap.px.ftw/artifactory/api/pypi/pypi/simple/pxrancher/
+  Could not fetch URL https://ap.px.ftw/artifactory/api/pypi/pypi/simple/pxrancher/: connection error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:590)
+  Will skip URL https://ap.px.ftw/artifactory/api/pypi/pypi/simple/pxrancher/ when looking for download links for pxrancher
+  Getting page https://ap.px.ftw/artifactory/api/pypi/pypi/simple/
+  Could not fetch URL https://ap.px.ftw/artifactory/api/pypi/pypi/simple/: connection error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:590)
+  Will skip URL https://ap.px.ftw/artifactory/api/pypi/pypi/simple/ when looking for download links for pxrancher
+  Cannot fetch index base URL https://ap.px.ftw/artifactory/api/pypi/pypi/simple/
+  URLs to search for versions for pxrancher:
+  * https://ap.px.ftw/artifactory/api/pypi/pypi/simple/pxrancher/
+  Getting page https://ap.px.ftw/artifactory/api/pypi/pypi/simple/pxrancher/
+  Could not fetch URL https://ap.px.ftw/artifactory/api/pypi/pypi/simple/pxrancher/: connection error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:590)
+  Will skip URL https://ap.px.ftw/artifactory/api/pypi/pypi/simple/pxrancher/ when looking for download links for pxrancher
+  Could not find any downloads that satisfy the requirement pxrancher
+Cleaning up...
+  Removing temporary dir /Users/mboeker/.virtualenvs/os-dev/build...
+No distributions at all found for pxrancher
+Exception information:
+Traceback (most recent call last):
+  File "/Users/mboeker/.virtualenvs/os-dev/lib/python2.7/site-packages/pip/basecommand.py", line 122, in main
+    status = self.run(options, args)
+  File "/Users/mboeker/.virtualenvs/os-dev/lib/python2.7/site-packages/pip/commands/install.py", line 278, in run
+    requirement_set.prepare_files(finder, force_root_egg_info=self.bundle, bundle=self.bundle)
+  File "/Users/mboeker/.virtualenvs/os-dev/lib/python2.7/site-packages/pip/req.py", line 1177, in prepare_files
+    url = finder.find_requirement(req_to_install, upgrade=self.upgrade)
+  File "/Users/mboeker/.virtualenvs/os-dev/lib/python2.7/site-packages/pip/index.py", line 277, in find_requirement
+    raise DistributionNotFound('No distributions at all found for %s' % req)
+DistributionNotFound: No distributions at all found for pxrancher
