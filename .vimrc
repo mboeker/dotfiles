@@ -12,3 +12,5 @@ syntax on
 
 set nocompatible
 nmap OP 
+
+set backspace=indent,eol,start

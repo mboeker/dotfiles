@@ -1,15 +1,10 @@
-alias ssh-ubu="ssh -l ubuntu -i ~/.ssh/planx"
-alias ssh-ubr="ssh -l uberboss -i ~/.ssh/id_rsa"
-
 alias ip='ifconfig | grep "inet "'
 alias res='scutil --dns | head -n 10; tail /etc/resolv.conf'
 alias flushdns='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; say flushed'
 
 alias ns='nslookup'
 alias sshr='ssh-keygen -f $HOME/.ssh/known_hosts -R'
-
-alias ap-ubu="ansible-playbook -u ubuntu --private-key ~/.ssh/planx -i hosts/config.ini -b"
-alias ap-ubr="ansible-playbook -u uberboss --private-key ~/.ssh/id_rsa -i hosts/config.ini -b -K"
+ssh-add -q ~/.ssh/*.pem
 
 alias duh='du -h -d 1 | sort -h'
 alias gh=' history | grep'
@@ -20,11 +15,14 @@ psg () { ps -eaf | grep -v grep | grep $@; }
 tn () { echo | telnet $@; }
 ggrep () { grep $@ | grep -v '.git'; }
 
-source /usr/local/bin/virtualenvwrapper.sh
-
 export HOMEBREW_GITHUB_API_TOKEN="483b3b476722f4aa6b56b9696ed83180fb4679aa"
-export PATH="$HOME/bin:$HOME/dotfiles:$PATH"
+export PATH="$HOME/bin:$HOME/dotfiles::$PATH"
 
-alias duh='du -h -d 1'
+#eval "$(pyenv init -)"
+#eval "$(pyenv virtualenv-init -)"
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+
 alias vi=vim
-
+alias pip2=/usr/local/bin/pip
+alias pip=/usr/local/bin/pip3
+alias pw=pw.sh

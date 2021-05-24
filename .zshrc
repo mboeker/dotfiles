@@ -87,3 +87,4 @@ unsetopt inc_append_history
 unsetopt share_history
 source ~/.profile
 export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/share/python:$PATH"
